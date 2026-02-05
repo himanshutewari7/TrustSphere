@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Checker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg min-h-screen p-6">
+
+<h1 class="text-3xl font-bold">Link Checker</h1>
+
+<input id="urlInput" type="text"
+  class="w-full mt-4 p-4 rounded-xl border"
+  placeholder="Paste URL...">
+
+<button onclick="checkLink()"
+  class="mt-4 px-6 py-3 bg-black text-white rounded-xl">
+  Check Link
+</button>
+
+<div id="linkResult" class="mt-6"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

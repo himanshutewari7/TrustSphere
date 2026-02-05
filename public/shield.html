@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirstWeek Shield</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg min-h-screen p-6">
+
+<h1 class="text-3xl font-bold">FirstWeek Shield</h1>
+
+<div class="mt-6 space-y-4">
+  <label><input type="checkbox" id="q1"> I reuse passwords</label><br>
+  <label><input type="checkbox" id="q2"> I use public Wi-Fi often</label><br>
+  <label><input type="checkbox" id="q3"> I have 2FA enabled</label><br>
+  <label><input type="checkbox" id="q4"> I install apps from unknown sources</label><br>
+  <label><input type="checkbox" id="q5"> I share OTPs</label>
+</div>
+
+<button onclick="calculateScore()"
+  class="mt-6 px-6 py-3 bg-black text-white rounded-xl">
+  Get Safety Score
+</button>
+
+<h2 class="text-4xl mt-6 font-bold">
+  Score: <span id="score">--</span>/100
+</h2>
+
+<div id="shieldResult" class="mt-6"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
